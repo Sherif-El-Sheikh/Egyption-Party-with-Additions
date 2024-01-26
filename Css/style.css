@@ -1,0 +1,389 @@
+
+body {
+    font-family: 'Alice', serif;
+    overflow-x: hidden;
+}
+
+/* Home */
+#home {
+    background-image: url(../Assets/img/energetic-dance-floor-with-people-celebrating-birthday.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 660px;
+    color: white;
+    margin-bottom: 150px;
+}
+#home .overlayer {
+    top: 0;
+    left: 0;
+    background-color: rgba(228, 71, 76, 0.5);
+}
+
+.nav-side {
+    width: 0;
+    background-color: rgba(17, 17, 17, 0.85);
+    z-index: 1;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 65px;
+}
+
+.nav-side a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 8px 20px 32px;
+    color: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.nav-side a:hover {
+    color: #FFA732;
+}
+
+.nav-side a.close-menu {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .nav-side {
+        padding-top: 20px;
+    }
+    .nav-side a {
+        font-size: 18px;
+        padding: 16px 8px 20px 32px;
+    }
+}
+
+#home .open-nav {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#homeContent, .open-nav {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    padding: 16px;
+}
+.home-content {
+    height: 90%;
+}
+
+
+#homeContent h1 {
+    font-size: 60px;
+}
+
+@media (max-width: 576px) {
+    #homeContent h1 {
+        font-size: 40px;
+    }
+    #home .open-nav {
+        font-size: 26px;
+    }
+    #home .open-nav span {
+        display: none;
+    }
+}
+
+#homeContent p {
+    font-size: 20px;
+}
+
+#home .open-nav {
+    top: 50%;
+}
+
+/* singer */
+#singerDown {
+    margin-bottom: 170px;
+}
+
+#singerDown h3 {
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: #ee6868;
+    cursor: pointer;
+    color: white;
+}
+
+#singerDown .inner {
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: #ccc;
+    display: none;
+}
+
+#singerDown .first {
+    display: block;
+}
+
+/* counter */
+#count {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 104, 104, 0.7)), to(rgba(238, 104, 104, 0.7))), url(../Assets/img/party-time-message-lightbox-arrangement\ \(1\).jpg);
+    background-image: -o-linear-gradient(rgba(238, 104, 104, 0.7), rgba(238, 104, 104, 0.7)), url(../Assets/img/party-time-message-lightbox-arrangement\ \(1\).jpg);
+    background-image: linear-gradient(rgba(238, 104, 104, 0.7), rgba(238, 104, 104, 0.7)), url(../Assets/img/party-time-message-lightbox-arrangement\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: 35% 45%;
+    background-size: cover;
+    min-height: 380px;
+    margin-bottom: 170px;
+}
+@media (min-width: 992px) {
+    #count {
+        background-position: 35% 30%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        width: 50%;
+    }
+}
+
+#count .container {
+    padding-block: 100px;
+}
+
+#count .time{
+    padding: 15px 10px;
+    border: 2px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+#count p {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #B80000;
+    border: 2px solid #FFF;
+    font-size: 22px;
+}
+
+/* contact */
+#contact .head-contact h2 {
+    font-size: 36px;
+    color:#444;
+    margin-bottom: 20px;
+}
+
+#contact .head-contact p {
+    font-weight: 300;
+    color:#777;
+    font-size: 18px;
+}
+
+#contact .contact-info h3 {
+    color:#444;
+    font-size: 20px;
+}
+
+#contact .contact-info p {
+    color:#444;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+#contact .icons {
+    margin-top:50px;
+}
+#contact .icons p {
+    margin-bottom: 35px;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    #contact .contact-info p {
+        text-align: start;
+    }
+    #contact .icons p{
+    text-align: center;
+    }
+}
+
+#contact .icons i{
+    margin-right: 20px;
+    color:#D62E33;
+}
+
+#contact .icons p:nth-child(2){
+    color:#D62E33 !important;
+}
+
+#contact .contact-info .social-list {
+    margin-top:50px;
+    margin-bottom:10px;
+    color:#777;
+}
+
+#contact .contact-info .social-list i {
+    margin-right: 10px;
+    border:1px solid #999;
+    width:40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+#contact .contact-info .social-list i:hover{
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 20px;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #D62E33;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+#contact form textarea{
+    height: 200px;
+    resize:vertical;
+}
+
+#contact #chars {
+    font-size: 20px;
+    color: #D62E33;
+}
+
+#contact form button{
+    background-color: #f05055;
+    color:#fff;
+    padding:10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#contact form button:hover {
+    background-color: #D62E33;
+}
+
+
+/* options */
+.options {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    white-space: nowrap;
+}
+
+.options .optionSide {
+    background-color: #7d7d7d;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    display: none;
+}
+
+.options .optionSide h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.options .icon {
+    background-color: #C70039;
+    border-radius: 4px;
+}
+
+.options i {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.options .optionSide img {
+    width: 30x;
+    height: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+
+/* loading */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #bababa;
+    z-index: 999;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: rotate 1s linear infinite;
+            animation: rotate 1s linear infinite
+}
+
+.loader::before , .loader::after {
+    content: "";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    -webkit-animation: prixClipFix 2s linear infinite ;
+            animation: prixClipFix 2s linear infinite ;
+}
+
+.loader::after{
+    -webkit-transform: rotate3d(90, 90, 0, 180deg );
+            transform: rotate3d(90, 90, 0, 180deg );
+    border-color: #FF3D00;
+}
+
+@-webkit-keyframes rotate {
+    0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+    100%  {-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+}
+
+@keyframes rotate {
+    0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+    100%  {-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+}
+
+@-webkit-keyframes prixClipFix {
+    0%  {-webkit-clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0);clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    50% {-webkit-clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0);clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    75%, 100%  {-webkit-clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%);clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+}
+
+@keyframes prixClipFix {
+    0%  {-webkit-clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0);clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    50% {-webkit-clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0);clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    75%, 100%  {-webkit-clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%);clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+}
+
